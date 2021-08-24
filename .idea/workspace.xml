@@ -114,11 +114,11 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-11" />
-    <option name="y" value="-11" />
-    <option name="width" value="2183" />
-    <option name="height" value="1403" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-12" />
+    <option name="y" value="-12" />
+    <option name="width" value="2184" />
+    <option name="height" value="1404" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -214,6 +214,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
@@ -279,8 +280,7 @@
     <option name="totallyTimeSpent" value="11166000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1455" height="935" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1455" height="935" extended-state="6" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -298,7 +298,7 @@
       <window_info anchor="bottom" id="Messages" weight="0.329602" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.373599" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.373599" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
