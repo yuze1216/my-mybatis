@@ -4,5 +4,7 @@ import com.yz.been.User;
 
 public interface UserMapper {
 
-    User selectAll();
+    User selectAll(int a,int b);
+
+    int update();
 }
