@@ -37,7 +37,7 @@ public class DataBase {
         url = properties.getProperty("url").trim();
         username = properties.getProperty("username").trim();
         password = properties.getProperty("password").trim();
-        mapper =  properties.getProperty("mapper").trim();
+        //mapper =  properties.getProperty("mapper").trim();
         logger.info("driver: {}",driver);
         logger.info("url: {}",url);
         logger.info("username: {}",username);
@@ -97,7 +97,7 @@ public class DataBase {
     }
     public static void main(String[] args) throws ClassNotFoundException {
         Class clazz = UserMapper.class;//Class.forName("com.yz.mapper.UserMapper");
-        System.out.println(clazz.getName());
+        System.out.println(clazz.getSimpleName());
 //        System.out.println(clazz.getName());
 //        System.out.println("====================================");
         //System.out.println(UserMapper.class.getName());
