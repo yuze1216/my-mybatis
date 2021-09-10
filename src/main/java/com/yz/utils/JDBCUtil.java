@@ -2,13 +2,15 @@ package com.yz.utils;
 
 import com.yz.been.User;
 import com.yz.mapper.UserMapper;
+import com.yz.sqlsession.SqlSession;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.lang.reflect.Method;
+import java.net.BindException;
 import java.sql.*;
+import java.util.List;
 import java.util.Properties;
 
 /**
@@ -17,17 +19,24 @@ import java.util.Properties;
  * @data:2021/8/24
  */
 
-public class DataBase {
+public class JDBCUtil {
     private static String driver;
     private static String url;
     private static String username;
     private static String password;
-    private static String mapper;
     private static Logger logger = LogManager.getLogger();
+
+    public JDBCUtil(Properties properties){
+        driver = properties.getProperty("driver").trim();
+        url = properties.getProperty("url").trim();
+        username = properties.getProperty("username").trim();
+        password = properties.getProperty("password").trim();
+
+    }
     static {//静态代码块
         Properties properties = new Properties();
         //通过类加载器读取把文件转化成输入字节流
-        InputStream in = DataBase.class.getClassLoader().getResourceAsStream("database.properties");
+        InputStream in = JDBCUtil.class.getClassLoader().getResourceAsStream("database.properties");
         try {
             properties.load(in);//读取输入字节流
         }catch (IOException e){
@@ -42,7 +51,6 @@ public class DataBase {
         logger.info("url: {}",url);
         logger.info("username: {}",username);
         logger.info("password: {}",password);
-        logger.info("mapper: {}",mapper);
     }
     /**
      *
@@ -95,19 +103,5 @@ public class DataBase {
 
         }
     }
-    public static void main(String[] args) throws ClassNotFoundException {
-        Class clazz = UserMapper.class;//Class.forName("com.yz.mapper.UserMapper");
-        System.out.println(clazz.getSimpleName());
-//        System.out.println(clazz.getName());
-//        System.out.println("====================================");
-        //System.out.println(UserMapper.class.getName());
-        UserMapper instance =(UserMapper) new MyProxyUtil().Instance(UserMapper.class);
-        User user = instance.selectAll(1, 2);
-        logger.info("user :{}",user.toString());
 
-
-
-
-        //DataBase.getConnection();
-    }
 }

@@ -2,18 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d80d27a8-9792-4918-abd8-a66d75e7ab83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yz/sqlsession/Mysqlsession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/UserMapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yz/JDBC/MyJdbc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yz/annotation/Value.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yz/io/Resources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yz/sqlsession/SqlSessionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/yz/sqlsession/SqlSessionFactoryBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yz/config/MyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yz/config/Configuration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yz/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yz/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yz/utils/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yz/utils/DataBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yz/sqlsession/Mysqlsession.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yz/sqlsession/SqlSession.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yz/utils/DataBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yz/utils/JDBCUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/yz/utils/MyProxyUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yz/utils/MyProxyUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yz/utils/RegistsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yz/utils/RegistsMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yz/utils/DataBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yz/utils/DataBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/yz/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/yz/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yz/been/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yz/been/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yz/config/MyConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yz/mapper/UserMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yz/mapper/UserMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yz/sqlsession/Mysqlsession.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/yz/utils/DataBase.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yz/utils/MyProxyUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yz/utils/MyProxyUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/yz/utils/RegistsMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yz/utils/RegistsMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/database.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/yz/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/yz/Test.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -28,11 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/utils/MyProxyUtil.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+            <state relative-caret-position="220">
+              <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,10 +50,87 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/UserMapper.properties">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/JDBC/MyJdbc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="22">
-              <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+            <state relative-caret-position="346">
+              <caret line="117" column="56" selection-start-line="117" selection-start-column="56" selection-end-line="117" selection-end-column="56" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/sqlsession/SqlSession.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="308">
+              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/utils/JDBCUtil.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/yz/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/been/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+              <folding>
+                <element signature="e#197#198#0" expanded="true" />
+                <element signature="e#222#223#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/sqlsession/SqlSessionFactory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#295#296#0" expanded="true" />
+                <element signature="e#339#340#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/sqlsession/SqlSessionFactoryBuilder.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="335">
+              <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#793#794#0" expanded="true" />
+                <element signature="e#852#853#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -52,26 +138,23 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/mapper/UserMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+            <state relative-caret-position="330">
+              <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/utils/DataBase.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/config/Configuration.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-545">
-              <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/database.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+            <state relative-caret-position="264">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -86,6 +169,11 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ResultSetMetaData</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -93,21 +181,32 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/resources/datebase.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yz/config/MyConfig.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yz/config/DataBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yz/been/User.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j2.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/ceshigit" />
-        <option value="$PROJECT_DIR$/src/test/java/com/yz/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yz/utils/Invoker.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yz/sqlsession/Mysqlsession.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yz/utils/RegistsMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/database.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yz/utils/DataBase.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yz/mapper/UserMapper.java" />
         <option value="$PROJECT_DIR$/src/main/resources/UserMapper.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yz/aspect/Mapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yz/annotation/Mapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yz/annotation/Value.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yz/utils/DataBase.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yz/sqlsession/Mysqlsession.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yz/sqlsession/SqlSession.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yz/io/Resource.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yz/io/Resources.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yz/config/MyConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yz/config/Configuration.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yz/sqlsession/SqlSessionFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yz/sqlsession/SqlSessionFactoryBuilder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yz/utils/JDBCUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yz/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/yz/Test.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yz/utils/MyProxyUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yz/JDBC/MyJdbc.java" />
       </list>
     </option>
   </component>
@@ -134,17 +233,17 @@
         <path>
           <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
           <item name="SelfMybatis" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+          <item name="Dependencies" type="f4be9f2a:MavenProjectsStructure$DependenciesNode" />
         </path>
       </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-12" />
-    <option name="y" value="-12" />
-    <option name="width" value="2184" />
-    <option name="height" value="1404" />
+    <option name="x" value="-11" />
+    <option name="y" value="-11" />
+    <option name="width" value="2183" />
+    <option name="height" value="1403" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -152,8 +251,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -186,6 +285,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="yz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SelfMybatis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="self-mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="yz" type="462c0819:PsiDirectoryNode" />
+              <item name="annotation" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SelfMybatis" type="b2602c69:ProjectViewProjectNode" />
@@ -232,19 +340,6 @@
               <item name="yz" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SelfMybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="self-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SelfMybatis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="self-mybatis" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -280,23 +375,101 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="DataBase" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.yz.utils.DataBase" />
+  <component name="RunManager" selected="JUnit.Test.testOne">
+    <configuration name="Test.deleteOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="self-mybatis" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.yz.utils.*" />
+          <option name="PATTERN" value="com.yz.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.yz" />
+      <option name="MAIN_CLASS_NAME" value="com.yz.Test" />
+      <option name="METHOD_NAME" value="deleteOne" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test.insertOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="self-mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yz" />
+      <option name="MAIN_CLASS_NAME" value="com.yz.Test" />
+      <option name="METHOD_NAME" value="insertOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.testList" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="self-mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yz" />
+      <option name="MAIN_CLASS_NAME" value="com.yz.Test" />
+      <option name="METHOD_NAME" value="testList" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.testOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="self-mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yz" />
+      <option name="MAIN_CLASS_NAME" value="com.yz.Test" />
+      <option name="METHOD_NAME" value="testOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test.updateOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="self-mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.yz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.yz" />
+      <option name="MAIN_CLASS_NAME" value="com.yz.Test" />
+      <option name="METHOD_NAME" value="updateOne" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.Test.testList" />
+      <item itemvalue="JUnit.Test.testOne" />
+      <item itemvalue="JUnit.Test.deleteOne" />
+      <item itemvalue="JUnit.Test.insertOne" />
+      <item itemvalue="JUnit.Test.updateOne" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.DataBase" />
+        <item itemvalue="JUnit.Test.testOne" />
+        <item itemvalue="JUnit.Test.testList" />
+        <item itemvalue="JUnit.Test.insertOne" />
+        <item itemvalue="JUnit.Test.updateOne" />
+        <item itemvalue="JUnit.Test.deleteOne" />
       </list>
     </recent_temporary>
   </component>
@@ -316,18 +489,52 @@
       <workItem from="1630062814082" duration="10555000" />
       <workItem from="1630133572047" duration="64000" />
       <workItem from="1630920009100" duration="6941000" />
-      <workItem from="1631095692613" duration="3661000" />
+      <workItem from="1631095692613" duration="4262000" />
+      <workItem from="1631175273560" duration="11377000" />
+      <workItem from="1631241617152" duration="17208000" />
     </task>
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="Test_deleteOne - 2021.09.10 at 21h 48m 29s.xml">
+      <configuration name="Test.deleteOne" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test_deleteOne - 2021.09.10 at 22h 04m 59s.xml">
+      <configuration name="Test.deleteOne" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test_deleteOne - 2021.09.10 at 22h 05m 11s.xml">
+      <configuration name="Test.deleteOne" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test_insertOne - 2021.09.10 at 22h 15m 27s.xml">
+      <configuration name="Test.insertOne" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test_updateOne - 2021.09.10 at 22h 16m 18s.xml">
+      <configuration name="Test.updateOne" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test_insertOne - 2021.09.10 at 22h 18m 16s.xml">
+      <configuration name="Test.insertOne" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test_insertOne - 2021.09.10 at 22h 20m 10s.xml">
+      <configuration name="Test.insertOne" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test_insertOne - 2021.09.10 at 22h 22m 18s.xml">
+      <configuration name="Test.insertOne" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test_testOne - 2021.09.10 at 22h 22m 33s.xml">
+      <configuration name="Test.testOne" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test_testList - 2021.09.10 at 22h 22m 38s.xml">
+      <configuration name="Test.testList" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41079000" />
+    <option name="totallyTimeSpent" value="70265000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1455" height="935" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27129564" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21689335" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -336,7 +543,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32876712" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35118306" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3524284" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39975095" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -351,7 +558,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.329277" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.32856122" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -367,13 +574,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="154">
           <caret line="8" column="41" selection-start-line="8" selection-start-column="41" selection-end-line="8" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="20" column="37" lean-forward="true" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -399,16 +599,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/yz/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/java/jdk/jdk1.8.0_271/src.zip!/java/lang/reflect/Proxy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1553">
@@ -424,20 +614,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/utils/Invoker.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/config/MyConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/been/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="42" column="20" lean-forward="true" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/utils/RegistsMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -448,20 +624,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/sqlsession/Mysqlsession.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/aspect/Mapper.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/resources/UserMapper.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/mapper/UserMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        <state relative-caret-position="22">
+          <caret line="1" column="26" lean-forward="true" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -472,24 +639,141 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/UserMapper.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/annotation/Value.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        <state relative-caret-position="132">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/utils/DataBase.java">
+    <entry file="jar://D:/java/jdk/jdk1.8.0_271/src.zip!/java/lang/Class.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-545">
-          <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+        <state relative-caret-position="566">
+          <caret line="426" column="20" selection-start-line="426" selection-start-column="20" selection-end-line="426" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/io/Resources.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="79" lean-forward="true" selection-start-line="12" selection-start-column="79" selection-end-line="12" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/config/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/sqlsession/SqlSessionFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="37" selection-start-line="17" selection-start-column="37" selection-end-line="17" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#339#340#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/sqlsession/SqlSessionFactoryBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#793#794#0" expanded="true" />
+            <element signature="e#852#853#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/mapper/UserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="15" column="24" lean-forward="true" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/utils/MyProxyUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+        <state relative-caret-position="220">
+          <caret line="41" column="36" selection-start-line="41" selection-start-column="36" selection-end-line="41" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/sqlsession/SqlSession.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/utils/JDBCUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/java/jdk/jdk1.8.0_271/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="236" column="5" lean-forward="true" selection-start-line="236" selection-start-column="5" selection-end-line="236" selection-end-column="5" />
+          <folding>
+            <element signature="e#10065#10066#0" expanded="true" />
+            <element signature="e#10148#10149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/been/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="19" lean-forward="true" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+          <folding>
+            <element signature="e#197#198#0" expanded="true" />
+            <element signature="e#222#223#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yz/JDBC/MyJdbc.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="117" column="56" selection-start-line="117" selection-start-column="56" selection-end-line="117" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/yz/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="338">
+          <caret line="39" column="41" selection-start-line="39" selection-start-column="41" selection-end-line="39" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
