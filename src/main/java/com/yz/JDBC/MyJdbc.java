@@ -1,6 +1,4 @@
 package com.yz.JDBC;
-
-import com.yz.sqlsession.SqlSessionFactory;
 import com.yz.utils.JDBCUtil;
 import com.yz.utils.StringUtil;
 
@@ -16,20 +14,6 @@ import java.util.List;
  * @data:2021/9/10
  */
 public class MyJdbc {
-//    public static ResultSet getResultSet(String sql, Connection connection, Object... args) {
-//        try {
-//            assert connection != null;
-//            PreparedStatement preparedStatement = connection.prepareStatement(sql);
-////            Object[] clone = args.clone();
-////            for (int i = 0; i < clone.length; i++) {
-////                preparedStatement.setObject(i + 1, clone[i]);
-////            }
-//            return preparedStatement.executeQuery();
-//        } catch (SQLException throwable) {
-//            throwable.printStackTrace();
-//        }
-//        return null;
-//    }
     /**
      * 获取数据库查询结果的列名
      * @author yuze
