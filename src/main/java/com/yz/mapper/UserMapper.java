@@ -12,7 +12,7 @@ public interface UserMapper {
     User listAll();
     @Value("delete from user where id= 4")
     boolean deleteOne();
-    @Value("insert into user (name,age) values ('测试添加',100)")
+    @Value("insert into user (name,age,pass_word) values ('测试添加',100,123456)")
     boolean insertOne();
     @Value("update user set age=1 where id = 6")
     boolean updateOne();

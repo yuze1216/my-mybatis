@@ -6,6 +6,8 @@ import com.yz.sqlsession.SqlSession;
 
 import java.lang.reflect.*;
 import java.sql.*;
+import java.util.HashSet;
+import java.util.Set;
 
 /**
  * @author:yuze
@@ -17,6 +19,27 @@ public class MyProxyUtil implements InvocationHandler {
     private String obj;
     private SqlSession sqlSession;
     private Class mapperInterface;
+    private Set<String> set = new HashSet<String>(){
+        {
+            add("java.lang.Integer") ;
+            add("java.lang.Double");
+            add("java.lang.Float");
+            add("java.lang.Long");
+            add("java.lang.Short");
+            add("java.lang.Byte");
+            add("java.lang.Boolean");
+            add("java.lang.Character");
+            add("java.lang.String");
+            add("int");
+            add("double");
+            add("long");
+            add("short");
+            add("byte");add("boolean");add("char");add("float");
+        }
+    };
+    static {
+
+    }
 
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         Object obj = null;

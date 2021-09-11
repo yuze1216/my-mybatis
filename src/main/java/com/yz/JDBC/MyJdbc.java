@@ -2,6 +2,7 @@ package com.yz.JDBC;
 
 import com.yz.sqlsession.SqlSessionFactory;
 import com.yz.utils.JDBCUtil;
+import com.yz.utils.StringUtil;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -15,20 +16,20 @@ import java.util.List;
  * @data:2021/9/10
  */
 public class MyJdbc {
-    public static ResultSet getResultSet(String sql, Connection connection, Object... args) {
-        try {
-            assert connection != null;
-            PreparedStatement preparedStatement = connection.prepareStatement(sql);
-//            Object[] clone = args.clone();
-//            for (int i = 0; i < clone.length; i++) {
-//                preparedStatement.setObject(i + 1, clone[i]);
-//            }
-            return preparedStatement.executeQuery();
-        } catch (SQLException throwable) {
-            throwable.printStackTrace();
-        }
-        return null;
-    }
+//    public static ResultSet getResultSet(String sql, Connection connection, Object... args) {
+//        try {
+//            assert connection != null;
+//            PreparedStatement preparedStatement = connection.prepareStatement(sql);
+////            Object[] clone = args.clone();
+////            for (int i = 0; i < clone.length; i++) {
+////                preparedStatement.setObject(i + 1, clone[i]);
+////            }
+//            return preparedStatement.executeQuery();
+//        } catch (SQLException throwable) {
+//            throwable.printStackTrace();
+//        }
+//        return null;
+//    }
     /**
      * 获取数据库查询结果的列名
      * @author yuze
@@ -57,13 +58,9 @@ public class MyJdbc {
         int len = names.length;
         String[] str = new String[len];
         for (int i = 0; i <len ; i++) {
-            char[] c = names[i].toCharArray();
-            if(c[0]>='a'&&c[0]<='z'){//将列名首字母大写，方便给实体类赋值
-                c[0]-=32;
-            }
-            String colname = new String(c);
+            String s = StringUtil.camelName(names[i]);
+            String colname = StringUtil.firstUpperCase(s);
             str[i]=colname;
-
         }
         return str;
     }
@@ -81,7 +78,6 @@ public class MyJdbc {
         try {
             conn = JDBCUtil.getConnection();
             ps = conn.prepareStatement(sql);
-            //rs = getResultSet(sql, connection);
             rs = ps.executeQuery();
             String[] colNames = getColNames(rs);
             String[] capitalizeColNames = toCapitalizeColNames(colNames);
@@ -93,7 +89,7 @@ public class MyJdbc {
                 object = clz.newInstance();
                 for (int i = 0; i < len; i++) {
                     String colName = colNames[i];
-                    String methodName = "set" + capitalizeColNames[i];
+                    String methodName = setMethodName(capitalizeColNames[i]);
                     for (Method m : mt) {
                         if (methodName.equals(m.getName())) {
                             m.invoke(object, rs.getObject(colName));
@@ -132,7 +128,8 @@ public class MyJdbc {
                 object = clz.newInstance();
                 for (int i = 0; i < len; i++) {
                     String colName = colNames[i];
-                    String methodName = "set" + capitalizeColNames[i];
+                    //String methodName = "set" + capitalizeColNames[i];
+                    String methodName = setMethodName(capitalizeColNames[i]);
                     for (Method m : mt) {
                         if (methodName.equals(m.getName())) {
                             m.invoke(object, rs.getObject(colName));
@@ -152,11 +149,10 @@ public class MyJdbc {
      * @param obj 参数
      * @return
      */
-    public static boolean getDML(String sql) {
+    public static Object getDML(String sql){
 
         Connection conn = null;
         PreparedStatement ps = null;
-
         try {
             conn = JDBCUtil.getConnection();
             ps = conn.prepareStatement(sql);
@@ -164,9 +160,7 @@ public class MyJdbc {
 //            for (int i = 1; i <= obj.length; i++) {
 //                ps.setObject(i, obj[i - 1]);
 //            }
-            System.out.println(sql);
             int update = ps.executeUpdate();
-
             if (update > 0) {
                 return true;
             }
@@ -176,6 +170,17 @@ public class MyJdbc {
             JDBCUtil.close(conn, ps, null);
         }
         return false;
+    }
+    /**
+     *
+     * 方法名拼接
+     * @author yuze
+     * @date 2021/9/11 19:40
+     * @param [str]
+     * @return java.lang.String
+     */
+    private static String setMethodName(String str) {
+        return "set" + StringUtil.firstUpperCase(str);
     }
 
 

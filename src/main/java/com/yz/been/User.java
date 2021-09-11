@@ -9,6 +9,15 @@ public class User {
     private int id;
     private String name;
     private int age;
+    private String passWord;
+
+    public String getPassWord() {
+        return passWord;
+    }
+
+    public void setPassWord(String passWord) {
+        this.passWord = passWord;
+    }
 
     public int getId() {
         return id;
@@ -40,6 +49,7 @@ public class User {
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", age=" + age +
+                ",passWord='"+ passWord +'\''+
                 '}';
     }
 }
