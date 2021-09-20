@@ -13,41 +13,7 @@ import java.util.List;
  * @description:jdbc工具
  * @data:2021/9/10
  */
-public class MyJdbc {
-    /**
-     * 获取数据库查询结果的列名
-     * @author yuze
-     * @date 2021/9/10 10:46
-     * @param [rs]
-     * @return java.lang.String[]
-     */
-    public static String[] getColNames(ResultSet rs) throws SQLException {
-        ResultSetMetaData rsmd = rs.getMetaData();
-        int len = rsmd.getColumnCount();
-        String[] colNames = new String[len];
-        for (int i = 1; i <=len ; i++) {
-            colNames[i-1] = rsmd.getColumnLabel(i);
-        }
-        return colNames;
-    }
-    /**
-     *
-     * 将列名首字母大写
-     * @author yuze
-     * @date 2021/9/10 11:20
-     * @param [rs]
-     * @return java.lang.String[]
-     */
-    public static String[] toCapitalizeColNames(String[] names) throws SQLException {
-        int len = names.length;
-        String[] str = new String[len];
-        for (int i = 0; i <len ; i++) {
-            String s = StringUtil.camelName(names[i]);
-            String colname = StringUtil.firstUpperCase(s);
-            str[i]=colname;
-        }
-        return str;
-    }
+public class MyExecutor {
     /**
      * 封装多个对象（List类型的）
      * @author yuze
@@ -63,8 +29,9 @@ public class MyJdbc {
             conn = JDBCUtil.getConnection();
             ps = conn.prepareStatement(sql);
             rs = ps.executeQuery();
-            String[] colNames = getColNames(rs);
-            String[] capitalizeColNames = toCapitalizeColNames(colNames);
+            //String[] colNames = getColNames(rs);
+            String[] colNames =StringUtil.getColNames(rs);
+            String[] capitalizeColNames = StringUtil.toCapitalizeColNames(colNames);
             int len = colNames.length;
             Object object = null;
             Method[] mt = clz.getMethods();
@@ -103,8 +70,8 @@ public class MyJdbc {
             conn = JDBCUtil.getConnection();
             ps = conn.prepareStatement(sql);
             rs = ps.executeQuery();
-            String[] colNames = getColNames(rs);
-            String[] capitalizeColNames = toCapitalizeColNames(colNames);
+            String[] colNames = StringUtil.getColNames(rs);
+            String[] capitalizeColNames = StringUtil.toCapitalizeColNames(colNames);
             int len = colNames.length;
             Object object = null;
             Method[] mt = clz.getMethods();

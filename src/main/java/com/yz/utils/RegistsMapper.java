@@ -19,7 +19,7 @@ public class RegistsMapper {
 //            throw new BindException("Type"+clz+"is not know in regists");
 //        }else {
 //            try{
-//                return new MyProxyUtil().Instance(clz);
+//                return new MyMapperProxyUtil().Instance(clz);
 //            }catch (Exception e){
 //                throw new BindException("Error getting interface Cause"+e);
 //            }

@@ -1,7 +1,6 @@
 package com.yz.utils;
 
-import com.yz.JDBC.MyJdbc;
-import com.yz.annotation.Value;
+import com.yz.annotation.Sql;
 import com.yz.sqlsession.SqlSession;
 
 import java.lang.reflect.*;
@@ -14,7 +13,7 @@ import java.util.Set;
  * @description:mapper接口动态代理实现类
  * @data:2021/8/27
  */
-public class MyProxyUtil implements InvocationHandler {
+public class MyMapperProxyUtil implements InvocationHandler {
 
     private String obj;
     private SqlSession sqlSession;
@@ -68,15 +67,15 @@ public class MyProxyUtil implements InvocationHandler {
             ParameterizedType pt= (ParameterizedType)method.getGenericReturnType();
             Class type = (Class)pt.getActualTypeArguments()[0];
             Class clz = Class.forName(type.getName());
-            Object object = MyJdbc.getObjectList(sql, clz);
+            Object object = SqlSession.selectList(sql, clz);
             return object;
         }else if("boolean".equals(method.getReturnType().getName())) {
-            return MyJdbc.getDML(sql);
+            return SqlSession.getDML(sql);
         } else {
             System.out.println("返回单个对象");
             Class clz = Class.forName(method.getReturnType().getName());
             System.out.println(clz);
-            Object object = MyJdbc.getObject(sql, clz);
+            Object object = SqlSession.selectOne(sql, clz);
             return object;
         }
 
@@ -88,7 +87,7 @@ public class MyProxyUtil implements InvocationHandler {
     }
 
     public static String getSql(Method method){
-        Value value = method.getDeclaredAnnotation(Value.class);
+        Sql value = method.getDeclaredAnnotation(Sql.class);
         String sql = value.value();
         return sql;
     }

@@ -6,14 +6,10 @@ import com.yz.mapper.UserMapper;
 import com.yz.sqlsession.SqlSession;
 import com.yz.sqlsession.SqlSessionFactory;
 import com.yz.sqlsession.SqlSessionFactoryBuilder;
-import com.yz.utils.MyProxyUtil;
-import com.yz.utils.StringUtil;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-import javax.annotation.Resource;
 import java.io.InputStream;
-import java.lang.annotation.Annotation;
 import java.net.BindException;
 import java.util.List;
 
@@ -93,10 +89,5 @@ public class Test {
         }else {
             logger.info("更改失败");
         }
-    }
-
-    public static void main(String[] args) {
-        String s = "username";
-        System.out.println(StringUtil.camelName(s));
     }
 }
